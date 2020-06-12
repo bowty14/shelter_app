@@ -1,1 +1,3 @@
-<p><%= @dogs=JSON.parse('age') %></p>
+<p><% @dogs.each do |i| %></p>
+<%=link_to i["name"], 'dogs#show'%>
+<%end%>

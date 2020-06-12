@@ -1,7 +1,7 @@
 class DogsController < ApplicationController 
 
   def index
-    @dogs = AnimalService.get_dogs()
+    @dogs = AnimalService.get_dogs
   end
 
   def new 
