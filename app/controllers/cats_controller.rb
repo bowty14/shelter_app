@@ -5,7 +5,7 @@ class CatsController < ApplicationController
   end
 
   def new 
-    @cats = AnimalService.get_cats(params[:id])
+    @cats = AnimalService.get_cat(params[:id])
     render :new 
   end
 
@@ -14,7 +14,7 @@ class CatsController < ApplicationController
   end
 
   def show
-    @cat = AnimalService.get_cats(params[:id])
+    @cat = AnimalService.get_cat(params[:id])
     render :show
   end
 
