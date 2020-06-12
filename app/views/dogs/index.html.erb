@@ -1,3 +1,7 @@
 <p><% @dogs.each do |i| %></p>
-<%=link_to i["name"], 'dogs#show'%>
+<br>
+<p>This dog is <%=i['name']%> they are <%=i['age']%> years old. They are described as <%=i['description']%>. Their breed is <%=i['breed']%></p>
+
+
+
 <%end%>

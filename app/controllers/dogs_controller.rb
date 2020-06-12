@@ -1,11 +1,11 @@
 class DogsController < ApplicationController 
 
   def index
-    @dogs = AnimalService.get_dogs
+    @dogs = AnimalService.get_dogs()
   end
 
   def new 
-    @dogs = AnimalService.get_dogs(params[:id])
+    @dogs = AnimalService.get_dog(params[:id])
     render :new 
   end
 
@@ -14,7 +14,7 @@ class DogsController < ApplicationController
   end
 
   def show
-    @dog = AnimalService.get_dogs(params[:id])
+    @dog = AnimalService.get_dog(params[:id])
     render :show
   end
 
